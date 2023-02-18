@@ -19,4 +19,10 @@ packer.startup(function(use)
 	use 'hrsh7th/cmp-nvim-lsp' -- nivm-cmp source for neovim`s built-in LSP
 	use 'hrsh7th/nvim-cmp' -- Completition
 	use 'neovim/nvim-lspconfig' -- LSP
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		run = ':TSUpdate'
+	}
+	use 'windwp/nvim-autopairs'
+	use 'windwp/nvim-ts-autotag'
 end)
